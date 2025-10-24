@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Shelly's Circle of Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="antialiased text-gray-700">
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--primary-purple)] to-[var(--dark-purple)] flex items-center justify-center"><svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7-4.438-9.5-7.125C-1 9.25 4.5 4 7.5 6.75 9 8 12 11 12 11s3-3 4.5-4.25C19.5 4 25 9.25 21.5 13.875 19 16.562 12 21 12 21z"/></svg></div>
+            <div class="hidden sm:block"><div class="text-[var(--dark-purple)] font-semibold text-lg tracking-tight">Shelly's Circle of Care</div><div class="text-[var(--primary-purple)] text-xs">Senior Wellness</div></div>
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a class="text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="index.html">Home</a>
+            <a class="text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="about.html">About</a>
+            <a class="text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="service.html">Services</a>
+            <a class="text-sm font-medium text-[var(--dark-purple)]" href="contact.html">Contact</a>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="ml-4"><button class="bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white rounded-md px-4 py-2 shadow">WhatsApp Us</button></a>
+          </nav>
+          <div class="md:hidden"><button id="mobileMenuButton" aria-label="Toggle navigation menu" class="p-2 text-[var(--dark-purple)]"><svg id="menuIcon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100"><div class="px-4 py-6 space-y-4"><a href="index.html" class="block py-2 text-base font-medium">Home</a><a href="about.html" class="block py-2 text-base font-medium">About</a><a href="service.html" class="block py-2 text-base font-medium">Services</a><a href="contact.html" class="block py-2 text-base font-medium">Contact</a><a href="https://wa.me/YOUR_PHONE_NUMBER" class="block"><button class="w-full bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white rounded-md px-4 py-2">WhatsApp Us</button></a></div></div>
+    </header>
+    <main class="pt-24">
+      <section class="relative bg-gradient-to-br from-[#f5f3ff] via-white to-[#ffe2e2] py-20 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="inline-block mb-4"><span class="px-4 py-1.5 bg-[var(--coral-pink)]/10 text-[var(--dark-purple)] rounded-full text-sm font-medium border border-[var(--coral-pink)]/20">Contact</span></div>
+          <h1 class="text-4xl md:text-5xl font-bold text-[var(--dark-purple)] mb-6">Get in touch with Shelly</h1>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">I'd love to hear from you — whether you have questions, want to arrange a visit, or need support planning care.</p>
+        </div>
+      </section>
+      <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <form action="#" class="space-y-6 bg-white p-8 shadow-lg rounded-lg">
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Full name</label>
+              <input type="text" name="name" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="Your full name">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Email</label>
+              <input type="email" name="email" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="you@example.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Phone</label>
+              <input type="tel" name="phone" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="+1234567890">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea name="message" rows="5" class="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" placeholder="How can I help?"></textarea>
+            </div>
+            <div class="flex gap-4">
+              <button type="submit" class="bg-[var(--dark-purple)] text-white px-6 py-3 rounded-md">Send message</button>
+              <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer" class="inline-block align-middle"><button type="button" class="border border-[var(--coral-pink)] text-[var(--dark-purple)] px-6 py-3 rounded-md">WhatsApp</button></a>
+            </div>
+          </form>
+          <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <div class="p-6 bg-white shadow rounded-lg">
+              <h3 class="font-semibold text-[var(--dark-purple)] mb-2">Phone</h3>
+              <p class="text-sm text-gray-600">+YOUR_PHONE_NUMBER</p>
+            </div>
+            <div class="p-6 bg-white shadow rounded-lg">
+              <h3 class="font-semibold text-[var(--dark-purple)] mb-2">Email</h3>
+              <p class="text-sm text-gray-600">hello@shellyscircleofcare.example</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[var(--dark-purple)] text-white mt-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-[var(--coral-pink)] flex items-center justify-center">❤</div>
+              <div>
+                <div class="font-semibold">Shelly's Circle of Care</div>
+                <div class="text-xs text-white/70">Senior Wellness</div>
+              </div>
+            </div>
+            <p class="text-sm text-white/80 leading-relaxed">Providing compassionate, professional elder care with warmth and dignity.</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <div class="space-y-2">
+              <a href="index.html" class="block text-sm text-white/80 hover:text-white">Home</a>
+              <a href="about.html" class="block text-sm text-white/80 hover:text-white">About</a>
+              <a href="service.html" class="block text-sm text-white/80 hover:text-white">Services</a>
+              <a href="contact.html" class="block text-sm text-white/80 hover:text-white">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Get in Touch</h3>
+            <p class="text-sm text-white/80 mb-4">Ready to provide your loved ones with the care they deserve?</p>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER"><button class="bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white w-full rounded-md px-4 py-2">Contact via WhatsApp</button></a>
+          </div>
+        </div>
+
+        <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm text-white/60">
+          <p>© 2025 Shelly's Circle of Care. All rights reserved.</p>
+          <p class="mt-2">ASCHP Registered Specialist Wellness Counsellor - Reg no 896</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="layout.js"></script>
+  </body>
+</html>
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Heart,
+  Users,
+  Calendar,
+  Sparkles,
+  Home,
+  Shield,
+  Briefcase,
+  Car,
+  Plane,
+  Phone,
+  MessageCircle,
+  Gift,
+  Coffee,
+  ArrowRight,
+} from "lucide-react";
+import { motion } from "framer-motion";
+
+export default function ServicesPage() {
+  const coreServices = [
+    {
+      icon: Heart,
+      title: "Wellness Counselling & Emotional Support",
+      description:
+        "Gentle, person-centred counselling for seniors coping with loneliness, loss, stress, and the transitions of ageing. Professional support when you need it most.",
+      color: "#ffafaf",
+    },
+    {
+      icon: Users,
+      title: "Companionship & Social Connection",
+      description:
+        "Meaningful visits, conversations, reminiscence activities, and celebrating important moments such as birthdays and anniversaries.",
+      color: "#8785a2",
+    },
+    {
+      icon: Briefcase,
+      title: "Practical & Personal Assistance",
+      description:
+        "Support with daily affairs, appointments, errands, and acting as a trusted link between the elder and their family.",
+      color: "#6c6a8a",
+    },
+    {
+      icon: Sparkles,
+      title: "Special Occasion & Joyful Care",
+      description:
+        "Creating moments of joy, from small celebrations to personalised touches that make everyday life special.",
+      color: "#ffafaf",
+    },
+    {
+      icon: Home,
+      title: "Holistic Wellness & Enrichment",
+      description:
+        "Encouraging hobbies, creative expression, and gentle activities to maintain dignity, purpose, and wellbeing.",
+      color: "#8785a2",
+    },
+    {
+      icon: Shield,
+      title: "Collaboration & Advocacy",
+      description:
+        "Partnering with families, caregivers, and healthcare professionals to ensure seniors' needs and voices are fully respected.",
+      color: "#6c6a8a",
+    },
+  ];
+
+  const additionalServices = [
+    {
+      icon: Home,
+      title: "Relocation Assistance",
+      description: "Helping with moves and settling into new living arrangements",
+    },
+    {
+      icon: Heart,
+      title: "Care, Wellness and Nurture",
+      description: "Comprehensive daily care and wellness monitoring",
+    },
+    {
+      icon: Briefcase,
+      title: "Administration and Errands",
+      description: "Managing paperwork, bills, and daily errands",
+    },
+    {
+      icon: Car,
+      title: "Transportation",
+      description: "Safe transportation to appointments and outings",
+    },
+    {
+      icon: Plane,
+      title: "Arranging Holidays",
+      description: "Planning and coordinating travel and leisure activities",
+    },
+    {
+      icon: Shield,
+      title: "Home Safety Adaptation",
+      description: "Creating safer, more accessible home environments",
+    },
+  ];
+
+  const signatureOfferings = [
+    {
+      icon: Gift,
+      title: "Birthday Packages",
+      description: "Thoughtful celebrations to make clients feel truly special on their big day",
+    },
+    {
+      icon: Calendar,
+      title: "Moments of Meaning",
+      description: "Creating personalised experiences around anniversaries and milestones",
+    },
+    {
+      icon: Sparkles,
+      title: "Special Days",
+      description: "Bringing joy on holidays or occasions that may otherwise feel lonely",
+    },
+    {
+      icon: Coffee,
+      title: "Tea & Chats",
+      description: "Simple, warm companionship through conversation, stories, and connection",
+    },
+    {
+      icon: MessageCircle,
+      title: "Connection & Communication",
+      description: "Acting as a bridge between seniors and their families, including Zoom sessions",
+    },
+    {
+      icon: Heart,
+      title: "Personal Touches",
+      description: "Cards, flowers, small surprises, and gestures of care that brighten everyday life",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#f5f3ff] via-white to-[#ffe2e2] py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="inline-block mb-4">
+              <span className="px-4 py-1.5 bg-[#ffafaf]/10 text-[#6c6a8a] rounded-full text-sm font-medium border border-[#ffafaf]/20">
+                Our Services
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-[#6c6a8a] mb-6">
+              Comprehensive Care Tailored to Your Needs
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              A unique blend of emotional support, companionship, and practical assistance 
+              designed to enrich the lives of seniors in their own environments
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Core Services */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#6c6a8a] mb-4">
+              Core Service Areas
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              The foundation of compassionate, professional elder care
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {coreServices.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                  <CardHeader>
+                    <div
+                      className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4"
+                      style={{ backgroundColor: `${service.color}15` }}
+                    >
+                      <service.icon className="w-7 h-7" style={{ color: service.color }} />
+                    </div>
+                    <CardTitle className="text-xl text-[#6c6a8a]">
+                      {service.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-20 bg-gradient-to-b from-[#f5f3ff] to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#6c6a8a] mb-4">
+              Additional Support Services
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Practical assistance for daily living and special needs
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalServices.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="border-none shadow-md hover:shadow-lg transition-shadow duration-300 h-full bg-white">
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-[#ffe2e2] flex items-center justify-center flex-shrink-0">
+                        <service.icon className="w-6 h-6 text-[#6c6a8a]" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-semibold text-[#6c6a8a] mb-2">
+                          {service.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Signature Offerings */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#6c6a8a] mb-4">
+              Signature Offerings
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Unique touches that set Shelly's Circle of Care apart
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {signatureOfferings.map((offering, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Card className="border-2 border-[#ffafaf]/20 shadow-md hover:shadow-lg hover:border-[#ffafaf]/40 transition-all duration-300 h-full">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-gradient-to-br from-[#ffafaf] to-[#8785a2] flex items-center justify-center">
+                      <offering.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#6c6a8a] mb-2 text-center">
+                      {offering.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed text-center">
+                      {offering.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-br from-[#6c6a8a] to-[#8785a2] text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Heart className="w-16 h-16 mx-auto mb-6 text-[#ffafaf]" fill="currentColor" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Interested in Learning More?
+            </h2>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              Every client's needs are unique. Let's discuss how I can create a 
+              personalised care plan for your loved one.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to={createPageUrl("Contact")}>
+                <Button className="bg-white text-[#6c6a8a] hover:bg-gray-100 px-8 py-6 text-lg w-full sm:w-auto">
+                  Get in Touch
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+              </Link>
+              <a
+                href="https://wa.me/YOUR_PHONE_NUMBER"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg w-full sm:w-auto"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  WhatsApp Now
+                </Button>
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shelly's Circle of Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="antialiased text-gray-700">
+    <!-- Navigation -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-20">
+          <a href="index.html" class="flex items-center gap-3 group">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--primary-purple)] to-[var(--dark-purple)] flex items-center justify-center transition-transform group-hover:scale-105">
+              <!-- simple heart icon -->
+              <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 21s-7-4.438-9.5-7.125C-1 9.25 4.5 4 7.5 6.75 9 8 12 11 12 11s3-3 4.5-4.25C19.5 4 25 9.25 21.5 13.875 19 16.562 12 21 12 21z"/></svg>
+            </div>
+            <div class="hidden sm:block">
+              <div class="text-[var(--dark-purple)] font-semibold text-lg tracking-tight">Shelly's Circle of Care</div>
+              <div class="text-[var(--primary-purple)] text-xs">Senior Wellness</div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a class="nav-link text-sm font-medium text-[var(--dark-purple)]" href="index.html">Home</a>
+            <a class="nav-link text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="about.html">About</a>
+            <a class="nav-link text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="service.html">Services</a>
+            <a class="nav-link text-sm font-medium text-gray-600 hover:text-[var(--primary-purple)]" href="contact.html">Contact</a>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="ml-4">
+              <button class="bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white rounded-md px-4 py-2 shadow">WhatsApp Us</button>
+            </a>
+          </nav>
+
+          <div class="md:hidden">
+            <button id="mobileMenuButton" aria-label="Toggle navigation menu" class="p-2 text-[var(--dark-purple)]">
+              <svg id="menuIcon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
+        <div class="px-4 py-6 space-y-4">
+          <a href="index.html" class="block py-2 text-base font-medium">Home</a>
+          <a href="about.html" class="block py-2 text-base font-medium">About</a>
+          <a href="service.html" class="block py-2 text-base font-medium">Services</a>
+          <a href="contact.html" class="block py-2 text-base font-medium">Contact</a>
+          <a href="https://wa.me/YOUR_PHONE_NUMBER" class="block">
+            <button class="w-full bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white rounded-md px-4 py-2">WhatsApp Us</button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <!-- Hero -->
+      <section class="relative overflow-hidden bg-gradient-to-br from-[#ffe2e2] via-white to-[#f5f3ff] py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-block mb-4">
+                <span class="px-4 py-1.5 bg-[var(--coral-pink)]/10 text-[var(--dark-purple)] rounded-full text-sm font-medium border border-[var(--coral-pink)]/20">Professional Senior Wellness Care</span>
+              </div>
+              <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--dark-purple)] leading-tight mb-6">Compassionate Care for Your Loved Ones</h1>
+              <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">Think of me as "almost-a-Family on call" — offering warmth, companionship, and professional support when you can't always be there.</p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="contact.html" class="inline-block">
+                  <button class="bg-[var(--dark-purple)] hover:bg-[#5a5876] text-white px-8 py-3 text-lg rounded-md">Get in Touch</button>
+                </a>
+                <a href="https://wa.me/YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer">
+                  <button class="border border-[var(--coral-pink)] text-[var(--dark-purple)] hover:bg-[#ffe2e2] px-8 py-3 text-lg rounded-md">WhatsApp Now</button>
+                </a>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img src="img/SCC_v03.png" alt="Shelly's Circle of Care" class="w-full h-auto" />
+              </div>
+              <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[var(--coral-pink)]/20 rounded-full soft-blur"></div>
+              <div class="absolute -top-6 -left-6 w-48 h-48 bg-[var(--primary-purple)]/20 rounded-full soft-blur"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-purple)] mb-4">How I Can Help</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">A unique blend of emotional support, companionship, and practical assistance designed to enrich the lives of seniors</p>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+              <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center gradient-secondary">👋
+                <span class="text-white text-2xl">❤</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Wellness Counselling</h3>
+              <p class="text-gray-600">Gentle, person-centred support for the transitions of ageing</p>
+            </div>
+
+            <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+              <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center gradient-primary">🎯
+                <span class="text-white text-2xl">👥</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Companionship</h3>
+              <p class="text-gray-600">Meaningful connections, conversations, and celebration of special moments</p>
+            </div>
+
+            <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+              <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center gradient-secondary">💝
+                <span class="text-white text-2xl">🛡️</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Practical Support</h3>
+              <p class="text-gray-600">Assistance with daily affairs, appointments, and errands</p>
+            </div>
+
+            <div class="p-6 bg-white shadow-lg rounded-lg text-center">
+              <div class="w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center gradient-coral-reverse">❤️
+                <span class="text-white text-2xl">✨</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Special Occasions</h3>
+              <p class="text-gray-600">Creating joyful moments and personalised celebrations</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="service.html" class="inline-block border border-[var(--primary-purple)] text-[var(--dark-purple)] hover:bg-[#f5f3ff] px-6 py-3 rounded-md">View All Services</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="py-20 bg-gradient-to-b from-[#f5f3ff] to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-purple)] mb-4">Why Families Trust Us</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">More than just services — it's about relationships, trust, and genuine care</p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--coral-pink)] to-[var(--primary-purple)] flex items-center justify-center">
+                <span class="text-white text-2xl">🏆</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Professional & Qualified</h3>
+              <p class="text-gray-600">ASCHP-registered Specialist Wellness Counsellor with honours degree</p>
+            </div>
+
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--coral-pink)] to-[var(--primary-purple)] flex items-center justify-center">
+                <span class="text-white text-2xl">❤</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Family on Call</h3>
+              <p class="text-gray-600">Like family when yours can't always be there</p>
+            </div>
+
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-[var(--coral-pink)] to-[var(--primary-purple)] flex items-center justify-center">
+                <span class="text-white text-2xl">⏰</span>
+              </div>
+              <h3 class="text-xl font-semibold text-[var(--dark-purple)] mb-3">Reliable & Dedicated</h3>
+              <p class="text-gray-600">Consistent, trustworthy support you can count on</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-20 bg-[var(--dark-purple)] text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div class="mx-auto mb-6 w-16 h-16 rounded-full bg-[var(--coral-pink)] flex items-center justify-center">
+            <span class="text-white text-3xl">❤</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Provide Your Loved Ones with the Care They Deserve?</h2>
+          <p class="text-xl text-white/90 mb-8">Let's have a conversation about how I can support your family. No obligations — just a caring discussion about your needs.</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="bg-white text-[var(--dark-purple)] px-8 py-3 rounded-md">Schedule a Chat</a>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER" class="border border-white text-white px-8 py-3 rounded-md">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--dark-purple)] text-white mt-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-10 h-10 rounded-full bg-[var(--coral-pink)] flex items-center justify-center">
+                <span class="text-white">❤</span>
+              </div>
+              <div>
+                <div class="font-semibold">Shelly's Circle of Care</div>
+                <div class="text-xs text-white/70">Senior Wellness</div>
+              </div>
+            </div>
+            <p class="text-sm text-white/80 leading-relaxed">Providing compassionate, professional elder care with warmth and dignity.</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <div class="space-y-2">
+              <a href="index.html" class="block text-sm text-white/80 hover:text-white">Home</a>
+              <a href="about.html" class="block text-sm text-white/80 hover:text-white">About</a>
+              <a href="service.html" class="block text-sm text-white/80 hover:text-white">Services</a>
+              <a href="contact.html" class="block text-sm text-white/80 hover:text-white">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-4">Get in Touch</h3>
+            <p class="text-sm text-white/80 mb-4">Ready to provide your loved ones with the care they deserve?</p>
+            <a href="https://wa.me/YOUR_PHONE_NUMBER"><button class="bg-[var(--coral-pink)] hover:bg-[#ff9f9f] text-white w-full rounded-md px-4 py-2">Contact via WhatsApp</button></a>
+          </div>
+        </div>
+
+        <div class="border-t border-white/10 mt-8 pt-8 text-center text-sm text-white/60">
+          <p>© 2025 Shelly's Circle of Care. All rights reserved.</p>
+          <p class="mt-2">ASCHP Registered Specialist Wellness Counsellor - Reg no 896</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="layout.js"></script>
+  </body>
+</html>
